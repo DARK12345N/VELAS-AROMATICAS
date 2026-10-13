@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Aroma Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header"><nav class="navbar"><div class="nav-container">
+        <div class="logo"><img src="imagenes/logo%20.png" alt="Aroma Tech - Velas Aromáticas"></div>
+        <ul class="nav-menu"><li><a href="index.html" class="nav-link">Inicio</a></li><li><a href="productos.html" class="nav-link">Productos</a></li><li><a href="nosotros.html" class="nav-link">Nosotros</a></li><li><a href="contacto.html" class="nav-link">Contacto</a></li></ul>
+        <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div></nav></header>
+
+    <main class="contact-section page-content"><div class="container"><h1 class="section-title">Contáctanos</h1><div class="contact-content">
+        <div class="contact-info"><div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h3>Dirección</h3><p>Municipio de Yapacaní</p></div></div><div class="contact-item"><i class="fas fa-phone"></i><div><h3>Teléfono</h3><p>74624003</p></div></div><div class="contact-item"><i class="fas fa-envelope"></i><div><h3>Email</h3><p>info@velasaromaticas.com</p></div></div></div>
+        <form class="contact-form"><div class="form-group"><input type="text" name="name" placeholder="Tu nombre" required></div><div class="form-group"><input type="email" name="email" placeholder="Tu email" required></div><div class="form-group"><textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea></div><button type="submit" class="btn btn-primary">Enviar Mensaje</button></form>
+    </div></div></main>
+
+    <footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2024 Velas Aromáticas. Todos los derechos reservados.</p></div></div></footer>
+    <script>document.querySelector('.hamburger').addEventListener('click', () => { document.querySelector('.nav-menu').classList.toggle('active'); }); document.querySelector('.contact-form').addEventListener('submit', event => { event.preventDefault(); alert('¡Mensaje enviado! Te contactaremos pronto.'); event.target.reset(); });</script>
+</body>
+</html>
